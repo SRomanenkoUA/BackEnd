@@ -1,0 +1,9 @@
+{
+  "id":1,
+  "applicationName":"Тестовое приложение",
+  "login":"Admin",
+  "passport": {
+    "s": 1522,
+    "n": 392303
+  }
+}

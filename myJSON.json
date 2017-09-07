@@ -1,0 +1,18 @@
+{
+    "MainMenu": {
+        "MenuStrip":[
+        {
+            name: "Главное меню",
+            weblink: "www.ukr.net"
+        },
+        {
+            name: "Финансы Украины",
+            weblink: "www.finance.ua"
+        },
+        {
+            name: "Почта",
+            weblink: "www.goggle.com"
+        }
+    ]
+}
+}

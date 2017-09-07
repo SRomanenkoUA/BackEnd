@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.0/vue.js" xmlns:v-on="http://www.w3.org/1999/xhtml"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Конфигуратор системы (v.0)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+<h1 v-if="showmenu">Для входа в систему. <br>
+ Введите свои данные: {{appName}}</h1>
+    <h1 v-else>Выполнен успешный вход пользователя</h1>
+    <h2 v-if="showuser">Логин пользователя:</h2>
+    <input type="text"
+           v-model="loginName"
+           v-if="showuser"
+           v-on:keyup.13="showpass = !showpass; showuser = !showuser ; onEnterUser()"
+           v-on:keyup.27=loginName=''><br>
+    <button v-if="showuser">  Запрос администратору  </button>
+    <h2 v-if="showpass">Пароль:</h2>
+    <input type="text"
+           v-model="pass"
+           v-if="showpass"
+           v-on:keyup.13="showpass = false; showuser = false; showmenu=false; onEnterPass()"
+           v-on:keyup.27=pass=''><br>
+    <button v-if="showpass">    Перейти к BackEnd     </button>
+
+  <!--
+  <h2 v-model="testData2">123</h2>
+  <h5 v-else>Вы не указали пользователя !!!</h5>
+
+  <script type="text/javascript" src="db.js"></script>
+
+  <script type="text/javascript" src="index.js"></script>
+  -->
+</div>
+<div id="Next">
+    <input type="text"
+           v-model="loginName"
+           v-if="showuser"
+           v-on:keyup.13="showpass = !showpass; showuser = !showuser ; onEnterUser()"
+           v-on:keyup.27=loginName=''><br>
+
+</div>
+
+<script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>

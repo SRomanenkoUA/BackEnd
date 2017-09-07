@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "BackEnd Test Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Romanenko Sergey",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "mz": "^2.6.0",
+    "oracle12db-win64": "http://guest:guest@pmo.parus.ua/svn/oracledb-12win64/oracle12db-win64.tgz"
+  }
+}
